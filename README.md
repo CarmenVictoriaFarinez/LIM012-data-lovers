@@ -106,22 +106,13 @@ OLYMPIC HISTORY- Contiene un apartado denominado "Medallero", a traves del cual,
 
 La implementacion de la interfaz de usuario tardo mas tiempo del planificado, al implementar los primeros springs se demoraron un tiempo mas del planificado, sin embargo, se trabajo para que el proyecto cumpliera con todas las caracteristicas solicitadas. A continuacion algunas imagenes del producto final:
 
-<<<<<<< HEAD
-  ![Pagina](readme8.png)
-  ![Pagina](readme9.png)
-=======
   ![Pagina](readme8.jpg)
   ![Pagina](readme9.jpg)
->>>>>>> 8dc07277da413778e50ca57ba9e6faa89a0432bb
 
 .- Muestra la data en una interfaz: una tabla.
 .- Permite al usuario interactuar para obtener la infomación que necesita: Filtra y ordena la data.
 
-<<<<<<< HEAD
-  ![Pagina](readme10.png)
-=======
   ![Pagina](readme10.jpg)
->>>>>>> 8dc07277da413778e50ca57ba9e6faa89a0432bb
 
 ## 6. Objetivos de aprendizaje
 
