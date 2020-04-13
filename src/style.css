@@ -15,7 +15,7 @@ a{
     flex-flow: column nowrap;
 }
  
-.borrar{
+.ocultar{
     display:none !important;
   }
  

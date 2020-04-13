@@ -1,24 +1,24 @@
-export const athletesView = (array) => {
-  const newArray = array.map(obj => ({
+export const athletesView = (arrayAtletas) => {
+  const arrayAtletasMin = arrayAtletas.map(obj => ({
     nombre: obj.nombre,
     deporte: obj.deporte,
     equipo: obj.equipo,
   }));
-  return newArray;
+  return arrayAtletasMin;
 };
 
-export const ordenAs = (p1) => {
-  const ascendente = p1.sort((prev, next) => {
+export const ordenAs = (arrayAtletas) => {
+  const arrayAtletasOrdenado = arrayAtletas.sort((prev, next) => {
     if (prev.nombre > next.nombre) {
       return 1;
     } return -1;
   });
-  return ascendente;
+  return arrayAtletasOrdenado;
 };
 
 export const filtrarAtletasPorDeporte = (arrayAtletas, deporteSeleccionado) => {
-  const deportesFiltrados = arrayAtletas.filter(atletas => atletas.deporte === deporteSeleccionado);
-  return deportesFiltrados;
+  const atletasFiltrado = arrayAtletas.filter(atletas => atletas.deporte === deporteSeleccionado);
+  return atletasFiltrado;
 };
 
 export const totalMedallas = (arrayAtletas, pais, olimpiada, tipo) => {

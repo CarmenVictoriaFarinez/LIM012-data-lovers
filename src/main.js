@@ -8,12 +8,12 @@ const arrAtletas = data.atletas;
 const optionsMenu = document.querySelectorAll('li');
 optionsMenu.forEach((liMenu) => {
   liMenu.addEventListener('click', (event) => {
-    document.getElementById('table').classList.remove('borrar');
+    document.getElementById('table').classList.remove('ocultar');
     const athletes = athletesView(arrAtletas);
 
     if (event.target.id === '1') {
       document.getElementById('root').innerHTML = '';
-      document.getElementById('articulos').classList.add('borrar');
+      document.getElementById('articulos').classList.add('ocultar');
 
       athletes.forEach((athlete) => {
         const ulAtleta = document.createElement('ul');
@@ -36,7 +36,8 @@ optionsMenu.forEach((liMenu) => {
 });
 const alfhabeticOrder = document.getElementById('btn');
 alfhabeticOrder.addEventListener('click', () => {
-  const ascendente = ordenAs(athletesView(arrAtletas));
+  const atletasMin = athletesView(arrAtletas);
+  const ascendente = ordenAs(atletasMin);
   document.getElementById('root').innerHTML = '';
   ascendente.forEach((athlete) => {
     const ulAtleta = document.createElement('ul');
@@ -81,11 +82,11 @@ optionSports.addEventListener('change', (event) => {
   }
 });
 
-const optionsMedallas = document.querySelector('#medallas');
-optionsMedallas.addEventListener('click', () => {
-  document.getElementById('seccion-medallas').classList.remove('borrar');
-  document.getElementById('table').classList.add('borrar');
-  document.getElementById('articulos').classList.add('borrar');
+const menuMedallas = document.querySelector('#medallas');
+menuMedallas.addEventListener('click', () => {
+  document.getElementById('seccion-medallas').classList.remove('ocultar');
+  document.getElementById('table').classList.add('ocultar');
+  document.getElementById('articulos').classList.add('ocultar');
 
   const btnMostrarMedallas = document.querySelector('#btnMostrarMedallas');
   const opcionOlimpiadas = document.querySelector('#opcionOlimpiadas');
